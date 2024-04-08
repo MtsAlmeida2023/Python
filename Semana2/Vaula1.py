@@ -1,3 +1,5 @@
+'''Aula de programação orientada a Objetos'''
+
 class point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -18,4 +20,3 @@ class point:
 
     def __repr__(self):
         return "(" + str(self.x) + "," + str(self.y) + ")"
-#aula de programaçao orientada de objetos
