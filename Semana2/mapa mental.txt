@@ -1,0 +1,39 @@
+criar class funcionario
+adicionar os tributos
+    nome
+    data de admissão
+    salário
+adicionar os metodos
+    manipulação de nome
+    manipulação de data de admissão
+    manipulação de salário
+criar cass gerente
+    onde gerente recebe de herança "funcionario"
+    adcionar bonus de salario como metodo
+
+
+
+class func:
+    def __init__(self, name='', sala=0, data=''):
+        self.name = name
+        self.sala = sala
+        self.data = data
+    def __repr__(self):
+        return "Nome: " + self.name + "\n" + "Salario: " + str(self.sala) + "\n" + "Data de admissão: " + self.data
+
+    def nome(self, name):
+        self.name = input()
+
+    def salario(self, sala):
+        self.sala = float(input())
+
+    def admiss(self, data):
+        self.data = input()
+
+while True:
+    print("=================[welcome}=====================")
+    n = input("Digite o nome do funcionario: ")
+    s = float(input("Digite o salario do Funcionario: "))
+    d = input('Digite a data de admissão: ')
+    func1=func(n,s,d)
+    print(func1)
