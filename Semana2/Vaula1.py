@@ -20,3 +20,9 @@ class point:
 
     def __repr__(self):
         return "(" + str(self.x) + "," + str(self.y) + ")"
+
+    def __add__(self, other):
+        if type(other)==point:
+            return point(self.x + other.x, self.y + other.y)
+        else:
+            return point(self.x + other, self.y + other)
